@@ -179,7 +179,65 @@ li.header-menu-video span {
 }
 
 .about-header {
-	
+	text-align: center;
+	font-size: 28px;
+	padding: 20px 0 40px 0;
+}
+
+.about-container {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about-container-2 {
+	padding: 0 0 0 15%;
+}
+
+.about-el-2 {
+	float: left;
+	width: 40%;
+}
+
+.about-el-3 {
+	float: left;
+	width: 33%;
+}
+
+.about-el-img-1 {
+	height: 122px;
+	background: transparent url(../images/about-1.png) no-repeat center bottom;
+}
+
+.about-el-img-2 {
+	height: 122px;
+	background: transparent url(../images/about-2.png) no-repeat center bottom;
+}
+
+.about-el-img-3 {
+	height: 122px;
+	background: transparent url(../images/about-3.png) no-repeat center bottom;
+}
+
+.about-el-img-4 {
+	height: 122px;
+	background: transparent url(../images/about-4.png) no-repeat center bottom;
+}
+
+.about-el-img-5 {
+	height: 122px;
+	background: transparent url(../images/about-5.png) no-repeat center bottom;
+}
+
+.about-el-header {
+	font-size: 20px;
+	padding: 0 0 10px 0;
+}
+
+.about-el-text {
+	width: 170px;
+	margin: 0 auto;
+	font-size: 12px;
 }
 
 .contact {
@@ -201,4 +259,8 @@ li.header-menu-video span {
 
 .bottom {
 	height: 76px;
+}
+
+.clear {
+	clear: both;
 }
