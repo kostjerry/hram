@@ -15,9 +15,17 @@ html {
 body {
 	font-family: HelveticaNeueCyrThin, Verdana;
 	font-size: 15px;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-child {
 	height: 100%;
 }
 
@@ -27,8 +35,6 @@ a {
 }
 
 .header {
-	height: 64px;
-	line-height: 64px;
 	text-align: center;
 }
 
@@ -93,40 +99,30 @@ li.header-menu-video span {
 }
 
 .main {
-	height: 492px;
+	display: flex;
+	flex-direction: column;
 }
 
 .main-logo {
-	width: 100%;
-	height: 355px;
-	background: transparent url(../images/main-logo.png) no-repeat center bottom;
+	height: 80%;
+	background: transparent url(../images/main-logo.png) no-repeat center;
 }
 
 .main-sublogo {
-	width: 100%;
-	height: 102px;
-	position: relative;
-	padding: 25px 0 0 0;
+	height: 20%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.main-history-left,
-.main-history-right {
-	position: absolute;
-	bottom: 85px;
-	height: 20px;
-	line-height: 20px;
+.main-history-link {
+	white-space: nowrap;
 }
 
 .main-history-left {
-	left: 0px;
-	padding: 0 0 0 90px;
-	background: transparent url(../images/history-left.png) no-repeat left center;
+	
 }
 
 .main-history-right {
-	right: 0px;
-	padding: 0 90px 0 0;
-	background: transparent url(../images/history-right.png) no-repeat right center;
 }
 
 .main-history-left a,
@@ -173,7 +169,6 @@ li.header-menu-video span {
 }
 
 .about {
-	height: 556px;
 	background: transparent url(../images/about-bg.jpg) no-repeat left top;
 	background-size: cover;
 }
@@ -241,24 +236,21 @@ li.header-menu-video span {
 }
 
 .contact {
-	height: 234px;
 	background: #fcdb30;
 }
 
 .video {
-	height: 556px;
 	background: transparent url(../images/video-bg.jpg) no-repeat left top;
 	background-size: cover;
 }
 
 .quotes {
-	height: 588px;
 	background: transparent url(../images/quotes-bg.jpg) no-repeat left top;
 	background-size: cover;
 }
 
 .bottom {
-	height: 76px;
+	
 }
 
 .clear {
