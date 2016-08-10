@@ -118,13 +118,6 @@ li.header-menu-video span {
 	white-space: nowrap;
 }
 
-.main-history-left {
-	
-}
-
-.main-history-right {
-}
-
 .main-history-left a,
 .main-history-right a {
 	font-size: 12px;
@@ -179,24 +172,14 @@ li.header-menu-video span {
 	padding: 20px 0 40px 0;
 }
 
+.about-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .about-container {
-	width: 800px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.about-container-2 {
-	padding: 0 0 0 15%;
-}
-
-.about-el-2 {
-	float: left;
-	width: 40%;
-}
-
-.about-el-3 {
-	float: left;
-	width: 33%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .about-el-img-1 {
