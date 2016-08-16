@@ -40,6 +40,8 @@ a {
 
 .header {
 	text-align: center;
+	height: 64px;
+	line-height: 64px;
 }
 
 .header-menu {
@@ -232,6 +234,103 @@ li.header-menu-video span {
 .contact {
 	background: #fcdb30;
 	height: 234px;
+	display: block;
+}
+
+.contact-wrapper {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+
+.contact-header {
+	text-align: center;
+	font-size: 25px;
+	padding: 25px 0 0 0;
+}
+
+.contact-info {
+	text-align: center;
+	font-size: 13px;
+	padding: 10px 0 0 0;
+	line-height: 15px;
+}
+
+.contact-inputs {
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+.contact-inputs label,
+.contact-inputs input[type=text]{
+	font-size: 19px;
+	line-height: 19px;
+	border: none;
+    padding: 3px;
+}
+
+.contact-checks-1 {
+	font-size: 15px;
+	line-height: 15px;
+	padding: 10px 0 0 0;
+}
+
+.contact-checks-1 input[type=checkbox] {
+	display: none;
+}
+
+.contact-checks-2 input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+	display: inline-block;
+    height: 20px;
+	line-height: 20px;
+	background: url(../images/checkbox-small.png) no-repeat left center;
+	margin: 0;
+	padding: 0 10px 0 18px;
+	cursor: pointer;
+}
+
+input[type=checkbox]:checked + label {
+	background: url(../images/checkbox-small-checked.png) no-repeat left center;
+}
+
+input[type=checkbox].checkbox-big + label {
+	display: inline-block;
+    height: 23px;
+	line-height: 26px;
+	background: url(../images/checkbox-big.png) no-repeat left center;
+	margin: 0;
+	padding: 0 10px 0 28px;
+	cursor: pointer;
+}
+
+input[type=checkbox].checkbox-big:checked + label {
+	background: url(../images/checkbox-big-checked.png) no-repeat left center;
+}
+
+.contact-checks-2 {
+	font-size: 15px;
+	line-height: 15px;
+	padding: 10px 0 0 0;
+}
+
+.contact-send {
+	position: absolute;
+	bottom: -25px;
+    right: 150px;
+	width: 160px;
+	display: block;
+	background: #000000;
+	font-size: 19px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
 }
 
 .video {
