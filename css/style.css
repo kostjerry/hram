@@ -10,6 +10,8 @@
 
 html {
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -18,6 +20,8 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
 
 .wrapper {
@@ -164,11 +168,12 @@ li.header-menu-video span {
 .about {
 	background: transparent url(../images/about-bg.jpg) no-repeat left top;
 	background-size: cover;
+	min-height: 720px;
 }
 
 .about-header {
 	text-align: center;
-	font-size: 28px;
+	font-size: 35px;
 	padding: 20px 0 40px 0;
 }
 
@@ -179,7 +184,11 @@ li.header-menu-video span {
 
 .about-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+}
+
+.about-el {
+	padding: 30px 50px;
 }
 
 .about-el-img-1 {
@@ -210,16 +219,19 @@ li.header-menu-video span {
 .about-el-header {
 	font-size: 20px;
 	padding: 0 0 10px 0;
+	text-align: center;
 }
 
 .about-el-text {
-	width: 170px;
-	margin: 0 auto;
-	font-size: 12px;
+	width: 270px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
 }
 
 .contact {
 	background: #fcdb30;
+	height: 234px;
 }
 
 .video {
@@ -230,10 +242,51 @@ li.header-menu-video span {
 .quotes {
 	background: transparent url(../images/quotes-bg.jpg) no-repeat left top;
 	background-size: cover;
+	min-height: 590px;
+}
+
+.quotes-header {
+	text-align: center;
+	font-size: 30px;
+	padding: 20px 0 40px 0;
+}
+
+.quotes-wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.quote-left,
+.quote-right {
+	width: 500px;
+	padding: 20px 0;
+}
+
+.quote-left {
+	float: left;
+	text-align: left;
+}
+
+.quote-right {
+	float: right;
+	text-align: right;
+}
+
+.quote-text {
+	font-size: 16px;
+	line-height: 18px;
+	background: transparent url(../images/quote.png) no-repeat left top;
+	display: inline-block;
+    padding: 0 0 0 20px;
+}
+
+.quote-source {
+	font-style: italic;
+	text-align: right;
 }
 
 .bottom {
-	
+	height: 76px;
 }
 
 .clear {
