@@ -50,7 +50,6 @@ a {
 }
 
 .header-menu ul {
-	
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -331,8 +330,47 @@ input[type=checkbox].checkbox-big:checked + label {
 }
 
 .video {
+	position: relative;
+}
+
+.video video {
+	position: relative;
 	background: transparent url(../images/video-bg.jpg) no-repeat left top;
 	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.video-header {
+	position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    color: #FFFFFF;
+	z-index: 1;
+}
+
+.video-play {
+	background: transparent url(../images/video-play.png) no-repeat center center;
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.video-social {
+	position: absolute;
+    bottom: 10px;
+    right: 0;
+	z-index: 3;
 }
 
 .quotes {
@@ -390,6 +428,62 @@ input[type=checkbox].checkbox-big:checked + label {
 
 .bottom {
 	height: 76px;
+	position: relative;
+}
+
+.bot-social {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bot-social a {
+	display: block;
+	width: 14px;
+	height: 22px;
+	background: transparent url(../images/fb.png) no-repeat center center;
+	height: 76px;
+    line-height: 76px;
+    margin: 0 0 0 20px;
+}
+
+.bot-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.bot-menu ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 0 20px;
+	height: 76px;
+    line-height: 86px;
+}
+
+.bot-menu ul li.bot-logo {
+	background: transparent url(../images/bot-logo.png) no-repeat center center;
+}
+
+.bot-menu ul li a {
+	margin: 0;
+	padding: 0;
+}
+
+.bot-design {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.bot-design a {
+	display: block;
+	background: transparent url(../images/design.jpg) no-repeat center center;
+	width: 52px;
+	height: 76px;
+    line-height: 76px;
+    margin: 0 20px 0 0;
 }
 
 .clear {
