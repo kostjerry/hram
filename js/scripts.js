@@ -69,6 +69,9 @@ window.onload = function () {
 			alert("Будь ласка, введіть коректнний email");
 			return;
 		}
+		if ($("#contact-check-7").prop("checked")) {
+			share();
+		}
 		
 		// Abort any pending request
 		if (request) {
@@ -97,8 +100,20 @@ window.onload = function () {
 
 		// Callback handler that will be called on success
 		request.done(function (response, textStatus, jqXHR){
-			// Log a message to the console
-			alert("Дані успішно відправлено");
+			if (!$("#contact-check-7").prop("checked")) {
+				alert("Дані успішно відправлено");
+			}
+			$("#contact-name").val("");
+			$("#contact-email").val("");
+			$("#contact-phone").val("");
+			$("#contact-check-1").prop("checked", "");
+			$("#contact-check-2").prop("checked", "");
+			$("#contact-check-3").prop("checked", "");
+			$("#contact-check-4").prop("checked", "");
+			$("#contact-check-5").prop("checked", "");
+			$("#contact-check-6").prop("checked", "");
+			$("#contact-check-7").prop("checked", "");
+			$("#contact-check-8").prop("checked", "");
 		});
 
 		// Callback handler that will be called on failure
@@ -110,6 +125,12 @@ window.onload = function () {
 				textStatus, errorThrown
 			);
 		});
+		
+		/*
+		request.always(function () {
+			
+		});
+		*/
 	});
 	
 	// http://stackoverflow.com/questions/2855865/jquery-regex-validation-of-e-mail-address
@@ -133,5 +154,28 @@ window.onload = function () {
 			video.play();
 		}
 		playing = !playing;
+	});
+	
+	function share() {
+		var href = window.location.href,
+			hrefParts = href.split("/");
+		FB.ui({
+				method: 'share',
+				href: hrefParts[0] + '//' + hrefParts[2],
+			},
+			// callback
+			function(response) {
+				if (response && !response.error_message) {
+					//alert('Posting completed.');
+				} else {
+					console.log('Error while posting.', response);
+				}
+			}
+		);
+	}
+	
+	// FB on video
+	$(".video-social-button").click(function () {
+		share();
 	});
 }

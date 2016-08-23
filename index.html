@@ -5,11 +5,37 @@
 		<title>Храм Світлого Христового Воскресіння. Небесна сотня</title>
 		<meta name="keywords" content="Храм Світлого Христового Воскресіння, Небесна сотня" />
 		<meta name="description" content="Храм Світлого Христового Воскресіння. Небесна сотня" />
+		
+		<meta property="fb:app_id" content="1177182079021293" />
+		<meta property="og:site_name" content="Храм Світлого Христового Воскресіння. Небесна сотня" />
+		<meta property="og:title" content="Храм Світлого Христового Воскресіння. Небесна сотня" />
+		<meta property="og:description" content="Храм Світлого Христового Воскресіння. Небесна сотня" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="http://hram.1gb.ua/images/fb-logo.jpg" />
+		<meta property="og:url" content="http://hram.1gb.ua" />
+		<meta property="og:locale" content="uk_UA" />
+		
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 	</head>
 	<body>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '1177182079021293',
+					xfbml      : true,
+					version    : 'v2.7'
+				});
+			};
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<div class="wraper">
 			<div class="flex-child header-and-main">
 				<div class="header">
@@ -159,7 +185,7 @@
 				</div>
 			</div>
 			<div class="flex-child video">
-				<video id="video" src="video/video.mp4" preload="auto">
+				<video id="video" src="video/video.mp4" preload="auto" poster="images/video-bg.jpg">
 					Щоб переглянути це відео, будь ласка, оновіть ваш веб-переглядач до версії, яка 
 					<a href="http://videojs.com/html5-video-support/" target="_blank">підтримує відео HTML5</a>
 				</video>
