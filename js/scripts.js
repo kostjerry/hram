@@ -140,9 +140,27 @@ window.onload = function () {
 	};
 	
 	// Video
-	var playing = false;
+	var videoViewCount = null;
+	$.ajax({
+		url: "https://script.google.com/macros/s/AKfycbxRUdYMhRxqesT9u0jJQp_R7YSCalZ0luN8pCYGRK0z_jH44Pp2/exec",
+		type: "GET"
+	}).done(function (data) {
+		videoViewCount = data.count;
+		$("#video-views-count").html(videoViewCount);
+		$("span.video-views-count").show();
+	});
+	var playing = null;
 	var video = document.getElementById("video");
 	$(".video-play").click(function () {
+		if ((playing === null) && (videoViewCount !== null)) {
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbxRUdYMhRxqesT9u0jJQp_R7YSCalZ0luN8pCYGRK0z_jH44Pp2/exec",
+				type: "POST",
+				data: {
+					count: videoViewCount + 1
+				}
+			});
+		}
 		if (playing) {
 			$(".video-play").css("opacity", "1.0");
 			$(".video-header").css("opacity", "1.0");

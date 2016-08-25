@@ -75,7 +75,7 @@ li.header-menu-video {
 	background: transparent url(../images/right-arrow.png) no-repeat left center;
 }
 
-li.header-menu-video span {
+li.header-menu-video span.video-views-count {
 	position: absolute;
 	top: 15px;
 	left: 0px;
@@ -83,6 +83,11 @@ li.header-menu-video span {
 	font-size: 10px;
 	width: 100%;
 	text-align: center;
+	display: none;
+}
+
+li.header-menu-video b {
+	font-weight: normal;
 }
 
 .header-social {
